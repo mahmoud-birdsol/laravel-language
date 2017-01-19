@@ -8,5 +8,23 @@
             "email": "mahmoud@birdsol.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "BirdSolutions\\Language\\" : "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BirdSolutions\\Language\\Test\\": "tests"
+        }
+    },
+    "require": {
+
+    },
+    "require-dev": {
+        "illuminate/support": "~5.1.0|~5.2.0|~5.3.0",
+        "phpunit/phpunit": "5.*",
+        "orchestra/testbench": "^3.3",
+        "mockery/mockery": "^0.9.4"
+    }
 }
