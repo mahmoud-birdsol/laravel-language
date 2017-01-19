@@ -1,0 +1,12 @@
+{
+    "name": "birdsolutions/laravel-language",
+    "description": "Laravel Language Manager",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahmoud El-Mokhtar",
+            "email": "mahmoud@birdsol.com"
+        }
+    ],
+    "require": {}
+}
