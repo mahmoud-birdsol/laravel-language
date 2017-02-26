@@ -70,28 +70,45 @@ class LanguageMiddlewareTest extends TestCase
         $this->assertTrue('en' == app()->getLocale());
     }
 
+    /** @test */
     public function it_keeps_the_route_input()
     {
-        // TODO
+        $this->call('GET', $this->baseUrl . '/about?name=John');
+
+        $this->assertRedirectedTo($this->baseUrl . '/en/about?name=John');
+
+        $this->assertTrue(request()->has('name') && request('name') == 'John');
     }
 
+    /** @test */
     public function it_sends_posts_request_correctly_without_redirects()
     {
-        // TODO
+        $response = $this->call('POST', $this->baseUrl . '/en/save');
+
+        $this->assertTrue($response->getStatusCode() == 200);
     }
 
+    /** @test */
     public function it_sends_put_request_correctly_without_redirects()
     {
-        // TODO
+        $response = $this->call('POST', $this->baseUrl . '/en/save');
+
+        $this->assertTrue($response->getStatusCode() == 200);
     }
 
+    /** @test */
     public function it_sends_patch_request_correctly_without_redirects()
     {
-        // TODO
+        $response = $this->call('POST', $this->baseUrl . '/en/save');
+
+        $this->assertTrue($response->getStatusCode() == 200);
     }
 
+    /** @test */
     public function it_sends_delete_request_correctly_without_redirects()
     {
-        // TODO
+        $response = $this->call('POST', $this->baseUrl . '/en/save');
+
+        $this->assertTrue($response->getStatusCode() == 200);
     }
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace BirdSolutions\Language;
+namespace BirdSolutions\Language\Providers;
 
-use Illuminate\Support\Facades\Route;
+use BirdSolutions\Language\Language;
 use Illuminate\Support\ServiceProvider;
 
 class LanguageServiceProvider extends ServiceProvider
@@ -25,7 +25,7 @@ class LanguageServiceProvider extends ServiceProvider
     public function register()
     {
         $this->publishes([
-            __DIR__.'/config/language.php' => config_path('language.php'),
+            __DIR__ . '/config/language.php' => config_path('language.php'),
         ]);
 
         $this->app->singleton(Language::class, function () {

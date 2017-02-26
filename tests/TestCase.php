@@ -3,8 +3,8 @@
 namespace BirdSolutions\Language\Test;
 
 use BirdSolutions\Language\Facades\Language;
-use BirdSolutions\Language\LanguageMiddleware;
-use BirdSolutions\Language\LanguageServiceProvider;
+use BirdSolutions\Language\Middleware\LanguageMiddleware;
+use BirdSolutions\Language\Providers\LanguageServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
@@ -96,6 +96,18 @@ class TestCase extends Orchestra
             });
             app('router')->get('/contact/{about}', function () {
                 return;
+            });
+            app('router')->post('/save', function () {
+                return 'saved';
+            });
+            app('router')->put('/save', function () {
+                return 'saved';
+            });
+            app('router')->patch('/save', function () {
+                return 'saved';
+            });
+            app('router')->delete('/save', function () {
+                return 'saved';
             });
         });
     }
