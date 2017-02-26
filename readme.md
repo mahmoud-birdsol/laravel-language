@@ -14,7 +14,7 @@ Add the service provider to the config/app.php file
     /*
      * Package Service Providers...
      */
-    BirdSolutions\Language\Providers\LanguageServiceProvider::class
+    BirdSolutions\Language\Providers\LanguageServiceProvider::class,
 ]
 ```
 
@@ -22,8 +22,15 @@ Add the service provider to the config/app.php file
 ```$xslt
 'aliases' => [
     ...
-    'Language' => BirdSolutions\Language\Faceades\Language::class
+    'Language' => BirdSolutions\Language\Facades\Language::class,
 ]
+```
+
+**Config**
+Publish the configuration file.
+```
+    php artisan vendor:publish --provider="BirdSolutions\Language\Providers\LanguageServiceProvider"
+
 ```
 
 **Middleware**
@@ -32,14 +39,14 @@ Add the language Middleware to the routeMiddleware array in kernel.php
 ```$xslt
 protected $routeMiddleware = [
        ...
-        'language' => BirdSolutions\Lanugage\Middleware\LanguageMiddleware::class,
+        'language' => \BirdSolutions\Language\Middleware\LanguageMiddleware::class,
     ];
 ```
 
  **Routes**
 ```$xslt
 Route::group([
-        'prefix' => '\Language::getLocale()'
+        'prefix' => '\Language::getLocale()',
         'middleware' => 'language'
     ], function () {
         // Add Localized routes here.

@@ -25,7 +25,7 @@ class LanguageServiceProvider extends ServiceProvider
     public function register()
     {
         $this->publishes([
-            __DIR__ . '/config/language.php' => config_path('language.php'),
+            __DIR__ . '/../config/language.php' => config_path('language.php'),
         ]);
 
         $this->app->singleton(Language::class, function () {
