@@ -46,7 +46,7 @@ protected $routeMiddleware = [
  **Routes**
 ```$xslt
 Route::group([
-        'prefix' => '\Language::getLocale()',
+        'prefix' => \Language::getLocale(),
         'middleware' => 'language'
     ], function () {
         // Add Localized routes here.
@@ -56,7 +56,7 @@ Route::group([
 
 **Change Language Manually**
 ```$xslt
-    Route::any('/language', '\BirdSolutions\Language\Controllers\LanguageController@changeLanguage)
+    Route::any('/language', '\BirdSolutions\Language\Controllers\LanguageController@changeLanguage');
 ```
 
 It will accept an input of language and set the language to the desired, you can send in get or post inputs.
