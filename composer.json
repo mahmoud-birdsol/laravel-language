@@ -1,6 +1,6 @@
 {
     "name": "birdsolutions/laravel-language",
-    "description": "Laravel Language Manager",
+    "description": "Laravel Route Localization Package",
     "license": "MIT",
     "authors": [
         {

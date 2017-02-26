@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aabbf5a1-78b2-434b-b534-fb21d1819e2d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Language.php" afterPath="$PROJECT_DIR$/src/Language.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Middleware/LanguageMiddleware.php" afterPath="$PROJECT_DIR$/src/Middleware/LanguageMiddleware.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/language.php" afterPath="$PROJECT_DIR$/src/config/language.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/TestCase.php" afterPath="$PROJECT_DIR$/tests/TestCase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
     </list>
     <ignored path="laravel-language.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,14 +24,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LanguageMiddleware.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Middleware/LanguageMiddleware.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding>
-                <element signature="e#53#89#0#PHP" expanded="true" />
-              </folding>
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="364">
+                <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -51,7 +51,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/tests/TestLanguageMiddleware.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/phpunit.xml" />
         <option value="$PROJECT_DIR$/src/LanguageServiceProvider.php" />
         <option value="$PROJECT_DIR$/src/Facades/Language.php" />
@@ -59,7 +58,6 @@
         <option value="$PROJECT_DIR$/src/LanguageMiddleware.php" />
         <option value="$PROJECT_DIR$/tests/LanguageMiddlewareTest.php" />
         <option value="$PROJECT_DIR$/src/Middlewares/LanguageMiddleware.php" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/tests/PrefixTest.php" />
         <option value="$PROJECT_DIR$/src/Controllers/LanguageController.php" />
         <option value="$PROJECT_DIR$/tests/ChangeLanguageTest.php" />
@@ -67,6 +65,8 @@
         <option value="$PROJECT_DIR$/tests/TestCase.php" />
         <option value="$PROJECT_DIR$/src/Language.php" />
         <option value="$PROJECT_DIR$/src/Middleware/LanguageMiddleware.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -151,6 +151,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Middleware" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel-language" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel-language" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Facades" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,25 +294,24 @@
       <workItem from="1484833475072" duration="75000" />
       <workItem from="1484833595951" duration="5589000" />
       <workItem from="1484839832265" duration="10119000" />
-      <workItem from="1488094186190" duration="3478000" />
+      <workItem from="1488094186190" duration="4861000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19261000" />
+    <option name="totallyTimeSpent" value="20644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.54300386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.54300386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -402,15 +419,15 @@
         <state relative-caret-position="264">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <marker date="1484835397000" expanded="true" signature="0:678" ph="{&quot;name&quot;: &quot;birdsolutions/laravel-language&quot;...}" />
-            <marker date="1484835397000" expanded="true" signature="132:244" ph="[...]" />
-            <marker date="1484835397000" expanded="true" signature="142:238" ph="{&quot;name&quot;: &quot;Mahmoud El-Mokhtar&quot;...}" />
-            <marker date="1484835397000" expanded="true" signature="262:347" ph="{...}" />
-            <marker date="1484835397000" expanded="true" signature="281:341" ph="{&quot;BirdSolutions\Language\&quot;: &quot;src/&quot;...}" />
-            <marker date="1484835397000" expanded="true" signature="369:460" ph="{...}" />
-            <marker date="1484835397000" expanded="true" signature="388:454" ph="{&quot;BirdSolutions\Language\Test\&quot;: &quot;tests&quot;...}" />
-            <marker date="1484835397000" expanded="true" signature="477:485" ph="{...}" />
-            <marker date="1484835397000" expanded="true" signature="506:676" ph="{&quot;illuminate/support&quot;: &quot;~5.1.0|~5.2.0|~5.3.0&quot;...}" />
+            <marker date="1488098363000" expanded="true" signature="0:688" ph="{&quot;name&quot;: &quot;birdsolutions/laravel-language&quot;...}" />
+            <marker date="1488098363000" expanded="true" signature="142:254" ph="[...]" />
+            <marker date="1488098363000" expanded="true" signature="152:248" ph="{&quot;name&quot;: &quot;Mahmoud El-Mokhtar&quot;...}" />
+            <marker date="1488098363000" expanded="true" signature="272:357" ph="{...}" />
+            <marker date="1488098363000" expanded="true" signature="291:351" ph="{&quot;BirdSolutions\Language\&quot;: &quot;src/&quot;...}" />
+            <marker date="1488098363000" expanded="true" signature="379:470" ph="{...}" />
+            <marker date="1488098363000" expanded="true" signature="398:464" ph="{&quot;BirdSolutions\Language\Test\&quot;: &quot;tests&quot;...}" />
+            <marker date="1488098363000" expanded="true" signature="487:495" ph="{...}" />
+            <marker date="1488098363000" expanded="true" signature="516:686" ph="{&quot;illuminate/support&quot;: &quot;~5.1.0|~5.2.0|~5.3.0&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -1418,48 +1435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Facades/Language.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding>
-            <marker date="1488094834000" expanded="true" signature="93:136" ph=" @see \BirdSolutions\Language\Language ..." />
-            <marker date="1488094834000" expanded="true" signature="168:351" ph="{...}" />
-            <marker date="1488094834000" expanded="true" signature="178:262" ph=" Get the registered name of the component. ..." />
-            <marker date="1488094834000" expanded="true" signature="316:348" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="26">
-            <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <marker date="1484835397000" expanded="true" signature="0:678" ph="{&quot;name&quot;: &quot;birdsolutions/laravel-language&quot;...}" />
-            <marker date="1484835397000" expanded="true" signature="132:244" ph="[...]" />
-            <marker date="1484835397000" expanded="true" signature="142:238" ph="{&quot;name&quot;: &quot;Mahmoud El-Mokhtar&quot;...}" />
-            <marker date="1484835397000" expanded="true" signature="262:347" ph="{...}" />
-            <marker date="1484835397000" expanded="true" signature="281:341" ph="{&quot;BirdSolutions\Language\&quot;: &quot;src/&quot;...}" />
-            <marker date="1484835397000" expanded="true" signature="369:460" ph="{...}" />
-            <marker date="1484835397000" expanded="true" signature="388:454" ph="{&quot;BirdSolutions\Language\Test\&quot;: &quot;tests&quot;...}" />
-            <marker date="1484835397000" expanded="true" signature="477:485" ph="{...}" />
-            <marker date="1484835397000" expanded="true" signature="506:676" ph="{&quot;illuminate/support&quot;: &quot;~5.1.0|~5.2.0|~5.3.0&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/LanguageController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
@@ -1630,6 +1605,48 @@
           <folding>
             <element signature="e#53#89#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="54" lean-forward="false" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
+          <folding>
+            <marker date="1488098363000" expanded="true" signature="0:688" ph="{&quot;name&quot;: &quot;birdsolutions/laravel-language&quot;...}" />
+            <marker date="1488098363000" expanded="true" signature="142:254" ph="[...]" />
+            <marker date="1488098363000" expanded="true" signature="152:248" ph="{&quot;name&quot;: &quot;Mahmoud El-Mokhtar&quot;...}" />
+            <marker date="1488098363000" expanded="true" signature="272:357" ph="{...}" />
+            <marker date="1488098363000" expanded="true" signature="291:351" ph="{&quot;BirdSolutions\Language\&quot;: &quot;src/&quot;...}" />
+            <marker date="1488098363000" expanded="true" signature="379:470" ph="{...}" />
+            <marker date="1488098363000" expanded="true" signature="398:464" ph="{&quot;BirdSolutions\Language\Test\&quot;: &quot;tests&quot;...}" />
+            <marker date="1488098363000" expanded="true" signature="487:495" ph="{...}" />
+            <marker date="1488098363000" expanded="true" signature="516:686" ph="{&quot;illuminate/support&quot;: &quot;~5.1.0|~5.2.0|~5.3.0&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Facades/Language.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <marker date="1488094834000" expanded="true" signature="93:136" ph=" @see \BirdSolutions\Language\Language ..." />
+            <marker date="1488094834000" expanded="true" signature="168:351" ph="{...}" />
+            <marker date="1488094834000" expanded="true" signature="178:262" ph=" Get the registered name of the component. ..." />
+            <marker date="1488094834000" expanded="true" signature="316:348" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="364">
+            <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
