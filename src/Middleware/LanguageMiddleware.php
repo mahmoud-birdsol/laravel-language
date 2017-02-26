@@ -41,7 +41,11 @@ class LanguageMiddleware
             return $next($request);
         }
 
-        if (!array_key_exists($request->segment(1), config('language.available_locales'))) {
+        if (session()->has('setLocale')){
+            return $this->language->hasSessionSetLocale($request);
+        }
+
+        if (!array_key_exists($request->segment(1), config('language.available_languages'))) {
             return $this->language->hasNoRouteLocale($request);
         }
 

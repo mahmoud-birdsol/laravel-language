@@ -3,19 +3,19 @@
 return [
     /*
     |--------------------------------------------------------------------------
-    | Localization configurable values
+    | Language configurable values
     |--------------------------------------------------------------------------
     */
 
     /**
      * Default locale.
      */
-    'default_locale' => 'en',
+    'default_language' => 'en',
 
     /**
      * Available locales for the application.
      */
-    'available_locales' => [
+    'available_languages' => [
         'en' => 'English',
         'ar' => 'Arabic',
     ],

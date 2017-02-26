@@ -13,7 +13,7 @@ class Language
      */
     public static function getLocale()
     {
-        return array_key_exists(request()->segment(1), config('language.available_locales')) ? request()->segment(1) : null;
+        return array_key_exists(request()->segment(1), config('language.available_languages')) ? request()->segment(1) : null;
     }
 
     /**
@@ -46,6 +46,23 @@ class Language
     }
 
     /**
+     * Handle if the session has set (choose) locale.
+     *
+     * @param $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function hasSessionSetLocale($request)
+    {
+        $this->saveLocale(session()->get('setLocale'));
+
+        $uri = $this->getUri($request->segments(), session()->get('setLocale'), $request->all());
+
+        session()->forget('setLocale');
+
+        return redirect($uri);
+    }
+
+    /**
      * Handle if there is a locale variable in session.
      *
      * @param $request
@@ -66,9 +83,9 @@ class Language
      */
     protected function hasNoSessionLocale($request)
     {
-        $this->saveLocale(config('language.default_locale'));
+        $this->saveLocale(config('language.default_language'));
 
-        return redirect($this->getUri($request->segments(), config('language.default_locale'), $request->all()));;
+        return redirect($this->getUri($request->segments(), config('language.default_language'), $request->all()));;
     }
 
     /**
@@ -144,7 +161,7 @@ class Language
     protected function removeLocaleFromSegments($segments)
     {
         if (count($segments) > 0) {
-            foreach (config('language.available_locales') as $key => $value) {
+            foreach (config('language.available_languages') as $key => $value) {
 
                 if ($key == $segments[0]) {
                     array_shift($segments);

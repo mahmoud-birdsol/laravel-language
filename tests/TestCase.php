@@ -62,8 +62,8 @@ class TestCase extends Orchestra
         $app->make('Illuminate\Contracts\Http\Kernel')
             ->pushMiddleware('Illuminate\Session\Middleware\StartSession');
 
-        $app['config']->set('language.default_locale', 'en');
-        $app['config']->set('language.available_locales', ['en' => 'English', 'ar' => 'Arabic']);
+        $app['config']->set('language.default_language', 'en');
+        $app['config']->set('language.available_languages', ['en' => 'English', 'ar' => 'Arabic']);
 
         $app->call([$this, 'mapRoutes']);
     }
@@ -109,6 +109,7 @@ class TestCase extends Orchestra
             app('router')->delete('/save', function () {
                 return 'saved';
             });
+            app('router')->any('/language', '\BirdSolutions\Language\Controllers\LanguageController@changeLanguage');
         });
     }
 }
