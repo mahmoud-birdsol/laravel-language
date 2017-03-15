@@ -130,7 +130,7 @@ class Language
         $uri = $uri . '?';
 
         foreach ($inputs as $key => $value) {
-            $uri = $uri . $key . '=' . $value;
+            $uri = $uri . $key . '=' . $value . '&';
         }
 
         return $uri;
